@@ -27,7 +27,7 @@ export default function AboutSection() {
                 <blockquote className="mt-4 text-2xl font-medium text-foreground">
                   We handle the business, you enjoy the spotlight.
                 </blockquote>
-                <p className="mt-4 text-muted-foreground">— Our Philosophy</p>
+                <p className="mt-4 text-muted-foreground">Our Philosophy</p>
               </CardContent>
             </Card>
           </div>
