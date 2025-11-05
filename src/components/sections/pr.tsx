@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Award, Megaphone, Star, Handshake, TrendingUp } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 
@@ -12,27 +10,14 @@ const prServices = [
 ];
 
 export default function PRSection() {
-  const prImage = PlaceHolderImages.find((p) => p.id === 'pr-image');
-
   return (
     <section id="pr" className="py-24 sm:py-32 bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-24 items-center">
             <div className="order-2 lg:order-1 flex items-center justify-center">
-             {prImage && (
-              <Card className="overflow-hidden rounded-xl shadow-2xl">
-                  <Image
-                    src={prImage.imageUrl}
-                    alt={prImage.description}
-                    width={800}
-                    height={600}
-                    className="object-cover transition-transform duration-300 hover:scale-105"
-                    data-ai-hint={prImage.imageHint}
-                  />
-              </Card>
-            )}
+              {/* Image removed as per request */}
           </div>
-          <div className="order-1 lg:order-2 space-y-6">
+          <div className="order-1 lg:order-2 space-y-6 lg:col-span-1">
             <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-secondary-foreground">
               Public Relations and Fame Development
             </div>

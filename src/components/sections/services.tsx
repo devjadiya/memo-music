@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check } from 'lucide-react';
 
@@ -12,8 +10,6 @@ const independentServices = [
 ];
 
 export default function ServicesSection() {
-  const servicesImage = PlaceHolderImages.find((p) => p.id === 'services-image');
-
   return (
     <section id="services" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6">
@@ -30,22 +26,7 @@ export default function ServicesSection() {
         </div>
 
         <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:gap-24 items-center">
-            {servicesImage && (
-              <Card className="overflow-hidden rounded-xl shadow-2xl">
-                 <CardContent className="p-0">
-                  <Image
-                    src={servicesImage.imageUrl}
-                    alt={servicesImage.description}
-                    width={800}
-                    height={600}
-                    className="object-cover"
-                    data-ai-hint={servicesImage.imageHint}
-                  />
-                 </CardContent>
-              </Card>
-            )}
-
-          <div className="space-y-6">
+          <div className="order-2 lg:order-1">
             <ul className="space-y-4">
               {independentServices.map((service) => (
                 <li key={service} className="flex items-start gap-4">
@@ -59,6 +40,9 @@ export default function ServicesSection() {
               ))}
             </ul>
           </div>
+           <div className="order-1 lg:order-2">
+             {/* Image removed as per request */}
+            </div>
         </div>
       </div>
     </section>

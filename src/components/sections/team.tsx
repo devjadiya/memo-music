@@ -1,7 +1,5 @@
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Users, Music, Video, Clapperboard, Mic, Newspaper, Palette } from 'lucide-react';
+import { Card, CardContent, CardTitle, CardDescription } from '@/components/ui/card';
+import { Users, Music, Clapperboard, Mic, Newspaper, Palette } from 'lucide-react';
 
 const teamCapabilities = [
   { icon: Music, text: 'Song production, beat creation, writing, recording & arrangement' },
@@ -32,7 +30,6 @@ const teamMembers = [
     description: "Building iconic visual identities that captivate audiences."
   },
 ];
-
 
 export default function TeamSection() {
   return (
@@ -66,20 +63,12 @@ export default function TeamSection() {
 
         <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {teamMembers.map((member) => {
-            const memberImage = PlaceHolderImages.find((p) => p.id === member.id);
             return (
               <Card key={member.name} className="text-center bg-card border-border hover:border-primary transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
                 <CardContent className="p-6">
-                  {memberImage && (
-                    <Image
-                      src={memberImage.imageUrl}
-                      alt={member.name}
-                      width={128}
-                      height={128}
-                      className="mx-auto mb-4 rounded-full"
-                      data-ai-hint={memberImage.imageHint}
-                    />
-                  )}
+                  <div className="mx-auto mb-4 h-32 w-32 rounded-full bg-secondary flex items-center justify-center">
+                    <Users className="h-16 w-16 text-accent" />
+                  </div>
                   <CardTitle className="text-xl font-bold font-headline">{member.name}</CardTitle>
                   <CardDescription className="text-accent">{member.role}</CardDescription>
                   <p className="mt-2 text-sm text-muted-foreground">{member.description}</p>

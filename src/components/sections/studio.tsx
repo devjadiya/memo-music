@@ -1,6 +1,4 @@
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle2 } from 'lucide-react';
 
 const studioServices = [
@@ -13,8 +11,6 @@ const studioServices = [
 ];
 
 export default function StudioSection() {
-  const studioImage = PlaceHolderImages.find((p) => p.id === 'studio-image');
-
   return (
     <section id="studio" className="py-24 sm:py-32 bg-card">
       <div className="container mx-auto px-4 md:px-6">
@@ -42,20 +38,7 @@ export default function StudioSection() {
             </ul>
           </div>
           <div className="flex items-center justify-center">
-             {studioImage && (
-              <Card className="overflow-hidden rounded-xl shadow-2xl">
-                <CardContent className="p-0">
-                  <Image
-                    src={studioImage.imageUrl}
-                    alt={studioImage.description}
-                    width={800}
-                    height={600}
-                    className="object-cover transition-transform duration-300 hover:scale-105"
-                    data-ai-hint={studioImage.imageHint}
-                  />
-                </CardContent>
-              </Card>
-            )}
+             {/* Image removed as per request */}
           </div>
         </div>
       </div>
