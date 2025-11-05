@@ -103,7 +103,7 @@ export default function ContactSection() {
 
             <div className="mt-8 text-center">
                  <p className="text-sm text-muted-foreground">
-                    All submissions are forwarded directly to memomusicdubai@hotmail.com.
+                    All submissions are forwarded to our talent acquisition team for review.
                 </p>
                 <div className="mt-4 flex justify-center gap-4">
                     <Button variant="ghost" size="icon" asChild>
