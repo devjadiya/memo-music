@@ -25,11 +25,8 @@ export default function HeroSection() {
             <h1 className="font-headline text-5xl font-bold tracking-tight text-accent md:text-7xl lg:text-8xl">
               Turning Talent Into Global Stars
             </h1>
-            <p className="mt-6 max-w-2xl mx-auto text-lg text-neutral-200 md:text-xl">
-              MEMO MUSIC is a premier music production company founded by Ryan
-              Makhoul. We are a powerhouse in artist development and music
-              production, enabling talent to reach their highest potential and
-              achieve international success.
+            <p className="mt-6 max-w-3xl mx-auto text-lg text-neutral-200 md:text-xl">
+              MEMO MUSIC stands as a premier music production company founded by Ryan Makhoul, the visionary manager behind some of the most influential Arabic artists in the world. His work includes collaborations with acclaimed talents such as Mohamed Ramadan and Balqees Fathi, as well as major names in hip-hop and R&B like Juicy J and Ty Dolla $ign. Today, MEMO MUSIC operates as a powerhouse in artist development and music production, enabling talent to reach their highest potential and achieve international success.
             </p>
             <div className="mt-10">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">

@@ -1,15 +1,15 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Users, Music, Video, Clapperboard, Mic, Newspaper, Palette, Bot } from 'lucide-react';
+import { Users, Music, Video, Clapperboard, Mic, Newspaper, Palette } from 'lucide-react';
 
 const teamCapabilities = [
-  { icon: Music, text: 'Song production & arrangement' },
-  { icon: Palette, text: 'Artist presence & branding' },
-  { icon: Users, text: 'Social media management' },
-  { icon: Newspaper, text: 'Press, media & magazine placements' },
-  { icon: Clapperboard, text: 'Global music video production' },
-  { icon: Bot, text: 'AI-powered trend analysis' },
+  { icon: Music, text: 'Song production, beat creation, writing, recording & arrangement' },
+  { icon: Palette, text: 'Artist presence development & personal branding' },
+  { icon: Users, text: 'Social media management & promotional campaigns' },
+  { icon: Newspaper, text: 'Press, media management & magazine placements' },
+  { icon: Clapperboard, text: 'Global music video production & creative direction' },
+  { icon: Mic, text: 'Styling, fashion direction, and visual identity' },
 ];
 
 const teamMembers = [
@@ -47,8 +47,7 @@ export default function TeamSection() {
           </h2>
           <p className="text-lg text-muted-foreground">
             A dedicated team of 50 industry professionals works collaboratively
-            to prepare artists for long-term success, shaping careers while the
-            artist focuses solely on creativity.
+            to prepare artists for long-term success. Every expert at MEMO MUSIC works for the artist’s success, shaping careers and public perception while the artist focuses solely on creativity and performance.
           </p>
         </div>
 

@@ -4,11 +4,11 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Check } from 'lucide-react';
 
 const independentServices = [
-  'Studio rental and full music production',
+  'Studio rental and music production services',
   'Complete song development from concept to commercial release',
-  'Access to professional crews for worldwide music videos',
-  'Targeted PR support to enhance credibility and exposure',
-  'Collaboration with branding specialists and promotional teams',
+  'Professional crews for worldwide music video production',
+  'PR support to enhance credibility and exposure',
+  'Access to branding specialists and promotional rollout teams',
 ];
 
 export default function ServicesSection() {
@@ -19,15 +19,13 @@ export default function ServicesSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-secondary-foreground">
-            Independent Artists
+            Independent Artist Services
           </div>
           <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
             World-Class Services, On Your Terms
           </h2>
           <p className="text-lg text-muted-foreground">
-            Gain the same premium resources used by international stars without
-            long-term management commitments. We provide professional support
-            for artists seeking to elevate their projects.
+            For artists seeking professional support without long-term management commitments, independent artists gain the same premium resources used by international stars.
           </p>
         </div>
 

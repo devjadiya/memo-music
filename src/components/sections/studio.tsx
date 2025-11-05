@@ -6,7 +6,7 @@ import { CheckCircle2 } from 'lucide-react';
 const studioServices = [
   'Professional Recording',
   'Mixing & Mastering',
-  'Songwriting & Arrangement',
+  'Songwriting',
   'Vocal Direction',
   'Complete Song Creation',
   'Studio Rental',
@@ -30,7 +30,7 @@ export default function StudioSection() {
               Our state-of-the-art 400 square meter studio in Downtown Dubai is
               engineered for world-class sound performance and exceptional
               comfort. Every detail is optimized to inspire creativity and
-              deliver elite production quality.
+              deliver elite production quality. MEMO MUSIC also offers studio rental for independent artists, including professional recording, mixing, mastering, songwriting, vocal direction, and complete song creation packages. Any artist can produce commercially ready music with access to our experienced production team.
             </p>
              <ul className="grid grid-cols-2 gap-4 text-base text-muted-foreground">
               {studioServices.map((service) => (

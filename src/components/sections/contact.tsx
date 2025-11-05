@@ -62,12 +62,14 @@ export default function ContactSection() {
     <section id="contact" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center space-y-4">
-          <h2 className="font-headline text-4xl font-bold tracking-tight text-accent sm:text-5xl">
-            Let's Make Your Music Dreams Reality
+          <p className="font-headline text-lg font-bold tracking-tight text-accent">
+            Your Talent, Our Expertise, Global Success
+          </p>
+          <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+            Let’s Make Your Music Dreams Reality
           </h2>
           <p className="text-lg text-muted-foreground">
-            Your Talent, Our Expertise, Global Success. Whether you are an
-            aspiring talent or a creative collaborator, connect with MEMO MUSIC
+            Whether you are an aspiring talent or a creative collaborator, connect with MEMO MUSIC
             to explore how your vision can evolve into global success.
           </p>
         </div>
