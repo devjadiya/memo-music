@@ -4,6 +4,14 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import { Button } from '../ui/button';
+import { Menu, X } from 'lucide-react';
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -15,6 +23,7 @@ const navLinks = [
 
 export default function Header() {
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +32,8 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
     <header
@@ -53,6 +64,47 @@ export default function Header() {
             </Link>
           ))}
         </nav>
+        <div className="md:hidden">
+           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Open menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left" className="bg-background/95 backdrop-blur-sm">
+                <div className="flex h-full flex-col">
+                    <div className="flex items-center justify-between border-b border-border p-4">
+                        <Link href="/" onClick={closeMobileMenu}>
+                            <Image
+                                src="https://blush-fashionable-swift-557.mypinata.cloud/ipfs/bafybeiaqwd37ydrlveo7mpxnx7enf6uwi7u4p2usuuis3adefi3v2ggc7a"
+                                alt="MEMO MUSIC Logo"
+                                width={120}
+                                height={40}
+                                className="h-10 w-auto"
+                            />
+                        </Link>
+                         <Button variant="ghost" size="icon" onClick={closeMobileMenu}>
+                            <X className="h-6 w-6" />
+                            <span className="sr-only">Close menu</span>
+                        </Button>
+                    </div>
+                    <nav className="flex flex-col gap-4 p-4">
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.href}
+                                href={link.href}
+                                onClick={closeMobileMenu}
+                                className="text-lg font-medium text-muted-foreground transition-colors hover:text-primary"
+                            >
+                                {link.label}
+                            </Link>
+                        ))}
+                    </nav>
+                </div>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );
