@@ -1,9 +1,18 @@
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative h-dvh w-full bg-background">
+    <section id="home" className="relative h-dvh w-full overflow-hidden bg-background">
+       <Image
+        src="/images/2.jpg"
+        alt="MEMO MUSIC Studio Control Room"
+        fill
+        className="object-cover"
+        priority
+        data-ai-hint="music studio control room"
+      />
       <div className="absolute inset-0 bg-black/70" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
         <div className="container px-4 md:px-6">

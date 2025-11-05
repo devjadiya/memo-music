@@ -45,11 +45,11 @@ export default function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
            <Image
-            src="https://blush-fashionable-swift-557.mypinata.cloud/ipfs/bafybeiaqwd37ydrlveo7mpxnx7enf6uwi7u4p2usuuis3adefi3v2ggc7a"
+            src="/images/logo.png"
             alt="MEMO MUSIC Logo"
             width={120}
-            height={40}
-            className="h-10 w-auto"
+            height={120}
+            className="h-14 w-auto"
             priority
           />
         </Link>
@@ -72,16 +72,16 @@ export default function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="bg-background/95 backdrop-blur-sm">
+            <SheetContent side="left" className="bg-background/95 backdrop-blur-sm p-0">
                 <div className="flex h-full flex-col">
                     <div className="flex items-center justify-between border-b border-border p-4">
                         <Link href="/" onClick={closeMobileMenu}>
                             <Image
-                                src="https://blush-fashionable-swift-557.mypinata.cloud/ipfs/bafybeiaqwd37ydrlveo7mpxnx7enf6uwi7u4p2usuuis3adefi3v2ggc7a"
+                                src="/images/logo.png"
                                 alt="MEMO MUSIC Logo"
                                 width={120}
-                                height={40}
-                                className="h-10 w-auto"
+                                height={120}
+                                className="h-14 w-auto"
                             />
                         </Link>
                          <Button variant="ghost" size="icon" onClick={closeMobileMenu}>

@@ -1,5 +1,6 @@
 import { Card, CardContent, CardTitle, CardDescription } from '@/components/ui/card';
 import { Users, Music, Clapperboard, Mic, Newspaper, Palette } from 'lucide-react';
+import Image from 'next/image';
 
 const teamCapabilities = [
   { icon: Music, text: 'Song production, beat creation, writing, recording & arrangement' },
@@ -8,27 +9,6 @@ const teamCapabilities = [
   { icon: Newspaper, text: 'Press, media management & magazine placements' },
   { icon: Clapperboard, text: 'Global music video production & creative direction' },
   { icon: Mic, text: 'Styling, fashion direction, and visual identity' },
-];
-
-const teamMembers = [
-  {
-    id: 'team-member-1',
-    name: 'Alexandre Dubois',
-    role: 'Head of A&R',
-    description: "Discovering and nurturing the next generation of global superstars."
-  },
-  {
-    id: 'team-member-2',
-    name: 'Isabella Rossi',
-    role: 'Lead Producer',
-    description: "Crafting chart-topping hits with a signature sound."
-  },
-  {
-    id: 'team-member-3',
-    name: 'Chen Wei',
-    role: 'Creative Director',
-    description: "Building iconic visual identities that captivate audiences."
-  },
 ];
 
 export default function TeamSection() {
@@ -48,34 +28,31 @@ export default function TeamSection() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {teamCapabilities.map((capability, index) => (
-            <div key={index} className="flex items-start gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                 <capability.icon className="h-6 w-6 text-accent" />
-              </div>
-              <div>
-                <h3 className="text-lg font-bold text-foreground">{capability.text}</h3>
-              </div>
+        <div className="mt-16 grid gap-12 lg:grid-cols-2 items-center">
+            <div>
+                 <ul className="space-y-6">
+                    {teamCapabilities.map((capability, index) => (
+                        <li key={index} className="flex items-start gap-4">
+                        <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                            <capability.icon className="h-6 w-6 text-accent" />
+                        </div>
+                        <div>
+                            <p className="text-lg font-medium text-foreground">{capability.text}</p>
+                        </div>
+                        </li>
+                    ))}
+                </ul>
             </div>
-          ))}
-        </div>
-
-        <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {teamMembers.map((member) => {
-            return (
-              <Card key={member.name} className="text-center bg-card border-border hover:border-primary transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                <CardContent className="p-6">
-                  <div className="mx-auto mb-4 h-32 w-32 rounded-full bg-secondary flex items-center justify-center">
-                    <Users className="h-16 w-16 text-accent" />
-                  </div>
-                  <CardTitle className="text-xl font-bold font-headline">{member.name}</CardTitle>
-                  <CardDescription className="text-accent">{member.role}</CardDescription>
-                  <p className="mt-2 text-sm text-muted-foreground">{member.description}</p>
-                </CardContent>
-              </Card>
-            );
-          })}
+            <div className="flex items-center justify-center">
+                 <Image
+                    src="/images/1.jpg"
+                    alt="MEMO MUSIC team member in the studio"
+                    width={500}
+                    height={750}
+                    className="rounded-lg shadow-2xl"
+                    data-ai-hint="man music studio"
+                />
+            </div>
         </div>
       </div>
     </section>

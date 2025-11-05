@@ -1,5 +1,5 @@
 import { Award, Megaphone, Star, Handshake, TrendingUp } from 'lucide-react';
-import { Card } from '@/components/ui/card';
+import Image from 'next/image';
 
 const prServices = [
   { icon: Megaphone, title: 'Publicity Campaigns & Reputation Building', description: 'Strategic campaigns to build reputation and audience impact.' },
@@ -15,7 +15,14 @@ export default function PRSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-24 items-center">
             <div className="order-2 lg:order-1 flex items-center justify-center">
-              {/* Image removed as per request */}
+              <Image
+                src="/images/4.jpg"
+                alt="Brand partnership handshake at MEMO MUSIC"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-2xl"
+                data-ai-hint="business handshake office"
+              />
           </div>
           <div className="order-1 lg:order-2 space-y-6 lg:col-span-1">
             <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-secondary-foreground">

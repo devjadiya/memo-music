@@ -1,4 +1,4 @@
-import { Card, CardContent } from '@/components/ui/card';
+import Image from 'next/image';
 import { Check } from 'lucide-react';
 
 const independentServices = [
@@ -40,8 +40,15 @@ export default function ServicesSection() {
               ))}
             </ul>
           </div>
-           <div className="order-1 lg:order-2">
-             {/* Image removed as per request */}
+           <div className="order-1 lg:order-2 flex justify-center">
+              <Image
+                src="/images/3.jpg"
+                alt="MEMO MUSIC reception area"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-2xl"
+                data-ai-hint="modern office reception"
+              />
             </div>
         </div>
       </div>

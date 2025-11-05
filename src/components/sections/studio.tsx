@@ -1,4 +1,4 @@
-import { Card, CardContent } from '@/components/ui/card';
+import Image from 'next/image';
 import { CheckCircle2 } from 'lucide-react';
 
 const studioServices = [
@@ -38,7 +38,14 @@ export default function StudioSection() {
             </ul>
           </div>
           <div className="flex items-center justify-center">
-             {/* Image removed as per request */}
+             <Image
+                src="/images/5.jpg"
+                alt="Collage of the MEMO MUSIC studio"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-2xl"
+                data-ai-hint="music studio collage"
+              />
           </div>
         </div>
       </div>
