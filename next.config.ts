@@ -9,7 +9,14 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    remotePatterns: [],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'blush-fashionable-swift-557.mypinata.cloud',
+        port: '',
+        pathname: '/ipfs/**',
+      },
+    ],
   },
 };
 

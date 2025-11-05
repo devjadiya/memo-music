@@ -45,7 +45,7 @@ export default function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
            <Image
-            src="/images/logo.png"
+            src="https://blush-fashionable-swift-557.mypinata.cloud/ipfs/bafybeiaqwd37ydrlveo7mpxnx7enf6uwi7u4p2usuuis3adefi3v2ggc7a"
             alt="MEMO MUSIC Logo"
             width={120}
             height={120}
@@ -77,7 +77,7 @@ export default function Header() {
                     <div className="flex items-center justify-between border-b border-border p-4">
                         <Link href="/" onClick={closeMobileMenu}>
                             <Image
-                                src="/images/logo.png"
+                                src="https://blush-fashionable-swift-557.mypinata.cloud/ipfs/bafybeiaqwd37ydrlveo7mpxnx7enf6uwi7u4p2usuuis3adefi3v2ggc7a"
                                 alt="MEMO MUSIC Logo"
                                 width={120}
                                 height={120}
