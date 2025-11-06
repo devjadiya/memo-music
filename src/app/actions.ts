@@ -2,7 +2,6 @@
 
 import { z } from 'zod';
 import { revalidatePath } from 'next/cache';
-import { analyzeMusicTrends, AnalyzeMusicTrendsOutput } from '@/ai/flows/analyze-music-trends';
 
 // Schema for contact form
 const contactSchema = z.object({
@@ -50,44 +49,4 @@ export async function submitContactForm(prevState: any, formData: FormData) {
       errors: {},
     };
   }
-}
-
-const musicAnalysisSchema = z.object({
-  artistName: z.string().min(1, { message: 'Artist name is required.' }),
-  genre: z.string().min(1, { message: 'Genre is required.' }),
-  trackDataUri: z.string().min(1, { message: 'Music file is required.' }),
-});
-
-type MusicAnalysisState = {
-  result?: AnalyzeMusicTrendsOutput,
-  error?: string,
-  success: boolean,
-}
-
-export async function getMusicAnalysis(prevState: any, formData: FormData): Promise<MusicAnalysisState> {
-    const validatedFields = musicAnalysisSchema.safeParse({
-      artistName: formData.get('artistName'),
-      genre: formData.get('genre'),
-      trackDataUri: formData.get('trackDataUri'),
-    });
-
-    if (!validatedFields.success) {
-      const errorMessages = Object.values(validatedFields.error.flatten().fieldErrors).flat().join(' ');
-      return {
-        error: errorMessages || 'Invalid input. Please check your fields.',
-        success: false,
-      };
-    }
-    
-    try {
-        const result = await analyzeMusicTrends(validatedFields.data);
-        revalidatePath('/');
-        return { result, success: true };
-    } catch(e: any) {
-        console.error(e);
-        return {
-            error: e.message || "An unexpected error occurred during analysis.",
-            success: false,
-        }
-    }
 }
