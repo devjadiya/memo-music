@@ -56,7 +56,7 @@ export default function TeamSection() {
             <SlideIn direction="right" delay={0.2}>
               <div className="flex items-center justify-center">
                   <Image
-                      src="/images/1.jpg"
+                      src="/images/2.jpg"
                       alt="MEMO MUSIC team member in the studio"
                       width={500}
                       height={750}

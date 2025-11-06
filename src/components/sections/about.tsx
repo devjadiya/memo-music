@@ -36,7 +36,7 @@ export default function AboutSection() {
           <SlideIn direction="left">
             <div className="flex flex-col items-center justify-center gap-8">
               <Image
-                src="/images/2.jpg"
+                src="/images/1.jpg"
                 alt="Ryan Makhoul, founder of MEMO MUSIC"
                 width={400}
                 height={400}
