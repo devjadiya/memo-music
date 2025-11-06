@@ -1,6 +1,20 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
+import { Playfair_Display, PT_Sans } from 'next/font/google';
+import { cn } from '@/lib/utils';
+
+const ptSans = PT_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-pt-sans',
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700', '900'],
+  variable: '--font-playfair-display',
+});
 
 export const metadata: Metadata = {
   title: 'MEMO MUSIC | Turning Talent Into Global Stars',
@@ -17,18 +31,14 @@ export default function RootLayout({
     <html lang="en" className="dark scroll-smooth">
       <head>
         <link rel="icon" href="https://blush-fashionable-swift-557.mypinata.cloud/ipfs/bafybeiaqwd37ydrlveo7mpxnx7enf6uwi7u4p2usuuis3adefi3v2ggc7a" sizes="any" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-          rel="stylesheet"
-        />
       </head>
-      <body className="font-body antialiased">
+      <body 
+        className={cn(
+          "font-body antialiased",
+          ptSans.variable,
+          playfairDisplay.variable
+        )}
+      >
         {children}
         <Toaster />
       </body>

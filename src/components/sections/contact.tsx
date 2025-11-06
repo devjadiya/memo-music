@@ -5,18 +5,14 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Loader2, Send } from 'lucide-react';
+import { useFormStatus } from 'react-dom';
 import { SocialIcon } from 'react-social-icons';
-import { useState } from 'react';
 
 function SubmitButton() {
-  const [pending, setPending] = useState(false);
-
-  const handleClick = () => {
-    setPending(true);
-  }
+  const { pending } = useFormStatus();
 
   return (
-    <Button type="submit" disabled={pending} size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" onClick={handleClick}>
+    <Button type="submit" disabled={pending} size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
       {pending ? (
         <>
           <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Sending...
@@ -76,24 +72,22 @@ export default function ContactSection() {
                     All submissions are directed to our talent acquisition team for review.
                 </p>
                 <div className="mt-4 flex justify-center gap-4">
-                    <SocialIcon
-                        url="https://instagram.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        bgColor="transparent"
-                        fgColor="currentColor"
-                        className="text-muted-foreground transition-colors hover:text-primary"
-                        style={{ height: 40, width: 40 }}
-                    />
-                    <SocialIcon
-                        url="https://youtube.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        bgColor="transparent"
-                        fgColor="currentColor"
-                        className="text-muted-foreground transition-colors hover:text-primary"
-                        style={{ height: 40, width: 40 }}
-                    />
+                  <SocialIcon
+                    url="https://instagram.com"
+                    network="instagram"
+                    bgColor="transparent"
+                    fgColor="currentColor"
+                    className="text-muted-foreground transition-colors hover:text-primary"
+                    style={{ height: 40, width: 40 }}
+                  />
+                  <SocialIcon
+                    url="https://youtube.com"
+                    network="youtube"
+                    bgColor="transparent"
+                    fgColor="currentColor"
+                    className="text-muted-foreground transition-colors hover:text-primary"
+                    style={{ height: 40, width: 40 }}
+                  />
                 </div>
             </div>
         </div>

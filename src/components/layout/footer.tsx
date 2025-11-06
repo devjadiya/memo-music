@@ -67,20 +67,22 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <h3 className="font-semibold text-foreground tracking-wider mb-4">Follow Us</h3>
             <div className="flex items-center gap-4">
-              <SocialIcon
-                url="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-opacity hover:opacity-80"
-                style={{ height: 44, width: 44 }}
-              />
-              <SocialIcon
-                url="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-opacity hover:opacity-80"
-                style={{ height: 44, width: 44 }}
-              />
+               <SocialIcon
+                  url="https://instagram.com"
+                  network="instagram"
+                  bgColor="transparent"
+                  fgColor="currentColor"
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                  style={{ height: 40, width: 40 }}
+                />
+                <SocialIcon
+                  url="https://youtube.com"
+                  network="youtube"
+                  bgColor="transparent"
+                  fgColor="currentColor"
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                  style={{ height: 40, width: 40 }}
+                />
             </div>
           </div>
         </div>

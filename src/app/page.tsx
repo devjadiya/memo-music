@@ -10,7 +10,7 @@ import ContactSection from '@/components/sections/contact';
 
 export default function Home() {
   return (
-    <div className="flex min-h-dvh flex-col bg-background">
+    <div className="flex min-h-dvh flex-col bg-background text-foreground">
       <Header />
       <main className="flex-1">
         <HeroSection />
