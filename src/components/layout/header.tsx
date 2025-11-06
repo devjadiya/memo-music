@@ -18,6 +18,7 @@ const navLinks = [
   { href: '#studio', label: 'Studio' },
   { href: '#team', label: 'Team' },
   { href: '#services', label: 'Services' },
+  { href: '#ai-analyzer', label: 'AI Analyzer' },
   { href: '#contact', label: 'Contact' },
 ];
 

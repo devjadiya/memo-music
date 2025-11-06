@@ -19,6 +19,9 @@ export default function AboutSection() {
               promotion. Our mission is to provide comprehensive, 360-degree
               support, empowering artists to focus exclusively on their craft.
             </p>
+            <p className="text-lg text-muted-foreground">
+              MEMO MUSIC stands as a premier music production company founded by Ryan Makhoul, the visionary manager behind some of the most influential Arabic artists in the world. Born and raised in Los Angeles, Ryan has been instrumental in shaping international careers and expanding the reach of Arabic music. His work includes collaborations with acclaimed talents such as Mohamed Ramadan and Balqees Fathi, as well as major names in hip-hop and R&B like Juicy J and Ty Dolla $ign. This portfolio highlights MEMO MUSIC’s versatility and ability to elevate artists across global markets.
+            </p>
           </div>
           <div className="flex items-center justify-center">
             <Card className="w-full max-w-md border-accent border-l-4 bg-card shadow-lg">

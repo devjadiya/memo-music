@@ -7,6 +7,7 @@ import TeamSection from '@/components/sections/team';
 import PRSection from '@/components/sections/pr';
 import ServicesSection from '@/components/sections/services';
 import ContactSection from '@/components/sections/contact';
+import AiAnalyzerSection from '@/components/sections/ai-analyzer';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <TeamSection />
         <PRSection />
         <ServicesSection />
+        <AiAnalyzerSection />
         <ContactSection />
       </main>
       <Footer />

@@ -21,7 +21,7 @@ export default function HeroSection() {
               Engineering Stardom. Defining Legacies.
             </h1>
             <p className="mt-6 max-w-3xl mx-auto text-lg text-neutral-200 md:text-xl">
-              MEMO MUSIC is the premier music production powerhouse founded by Ryan Makhoul, a visionary manager celebrated for launching global Arabic music icons. His portfolio, featuring collaborations with legends like Mohamed Ramadan, Balqees Fathi, Juicy J, and Ty Dolla $ign, showcases a mastery of cross-market artist elevation. Today, we are an integrated force in artist development and production, dedicated to transforming raw talent into international success.
+             From raw talent to global icon, MEMO MUSIC is the force that transforms musical careers. We don't just produce tracks; we build legacies.
             </p>
             <div className="mt-10">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
