@@ -40,7 +40,7 @@ export default function ContactSection() {
         </div>
 
         <div className="mt-16 max-w-2xl mx-auto">
-          <form action="https://formsubmit.co/memomusicdubai@hotmail.com" method="POST" className="space-y-6">
+          <form action="https://formsubmit.co/itsdevjadiya@gmail.com" method="POST" className="space-y-6">
             <input type="hidden" name="_subject" value="New submission from MEMO MUSIC Website!" />
             <input type="hidden" name="_next" value="https://memomusic-5555.web.app/" />
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -70,17 +70,16 @@ export default function ContactSection() {
             <div className="mt-16 text-center">
               <h3 className="font-headline text-2xl font-bold text-foreground">Our Location</h3>
               <p className="mt-2 text-muted-foreground">Downtown Dubai, UAE</p>
-              <div className="mt-4">
-                <Button 
-                  asChild 
-                  variant="outline" 
-                  className="bg-secondary hover:bg-secondary/80 hover:text-foreground"
-                >
-                  <a href="https://www.google.com/maps/search/?api=1&query=Downtown+Dubai" target="_blank" rel="noopener noreferrer">
-                    <MapPin className="mr-2 h-4 w-4" />
-                    View on Google Maps
-                  </a>
-                </Button>
+              <div className="mt-4 rounded-lg overflow-hidden border border-border/20">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14441.078441604033!2d55.27802644999999!3d25.19412875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f682f700cf983%3A0xb5cc58b076c0b904!2sDowntown%20Dubai%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sru!4v1762415339202!5m2!1sen!2sru" 
+                  width="100%" 
+                  height="450" 
+                  style={{border:0}} 
+                  allowFullScreen={true} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade">
+                </iframe>
               </div>
             </div>
 

@@ -56,11 +56,6 @@ export default function Footer() {
              <h3 className="font-semibold text-foreground tracking-wider mb-4">Contact Us</h3>
              <div className="space-y-3 text-sm text-muted-foreground">
                 <p>Downtown Dubai, UAE</p>
-                <p>
-                  <a href="mailto:memomusicdubai@hotmail.com" className="hover:text-primary transition-colors">
-                    memomusicdubai@hotmail.com
-                  </a>
-                </p>
              </div>
           </div>
           
