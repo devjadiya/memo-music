@@ -45,9 +45,9 @@ export default function ContactSection() {
         </div>
 
         <FadeIn delay={0.4} className="mt-16 max-w-2xl mx-auto">
-          <form action="https://formsubmit.co/your-email-here@email.com" method="POST" className="space-y-6">
+          <form action="https://formsubmit.co/itsdevjadiya@gmail.com" method="POST" className="space-y-6">
             <input type="hidden" name="_subject" value="New submission from MEMO MUSIC Website!" />
-            <input type="hidden" name="_next" value="https://memomusic-5555.web.app/" />
+            <input type="hidden" name="_next" value="https://memomusic.vercel.app/" />
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="space-y-2">
                 <Label htmlFor="name">Full Name</Label>
