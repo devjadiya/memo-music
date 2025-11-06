@@ -6,6 +6,7 @@ import StudioSection from '@/components/sections/studio';
 import TeamSection from '@/components/sections/team';
 import PRSection from '@/components/sections/pr';
 import ServicesSection from '@/components/sections/services';
+import InstagramSection from '@/components/sections/instagram';
 import ContactSection from '@/components/sections/contact';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <TeamSection />
         <PRSection />
         <ServicesSection />
+        <InstagramSection />
         <ContactSection />
       </main>
       <Footer />
