@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section id="home" className="relative h-dvh w-full overflow-hidden bg-black">
+    <section id="home" className="relative h-[60dvh] md:h-dvh w-full overflow-hidden bg-black">
       <video
         autoPlay
         loop
