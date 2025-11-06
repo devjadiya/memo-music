@@ -5,10 +5,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
 
@@ -73,18 +75,21 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="bg-background/95 backdrop-blur-sm p-0">
+                <SheetHeader className="border-b border-border p-4">
+                  <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                  <div className="flex items-center justify-between">
+                      <Link href="/" onClick={closeMobileMenu}>
+                          <Image
+                              src="https://blush-fashionable-swift-557.mypinata.cloud/ipfs/bafybeiaqwd37ydrlveo7mpxnx7enf6uwi7u4p2usuuis3adefi3v2ggc7a"
+                              alt="MEMO MUSIC Logo"
+                              width={120}
+                              height={120}
+                              className="h-14 w-auto"
+                          />
+                      </Link>
+                  </div>
+                </SheetHeader>
                 <div className="flex h-full flex-col">
-                    <div className="flex items-center justify-between border-b border-border p-4">
-                        <Link href="/" onClick={closeMobileMenu}>
-                            <Image
-                                src="https://blush-fashionable-swift-557.mypinata.cloud/ipfs/bafybeiaqwd37ydrlveo7mpxnx7enf6uwi7u4p2usuuis3adefi3v2ggc7a"
-                                alt="MEMO MUSIC Logo"
-                                width={120}
-                                height={120}
-                                className="h-14 w-auto"
-                            />
-                        </Link>
-                    </div>
                     <nav className="flex flex-col gap-4 p-4">
                         {navLinks.map((link) => (
                             <Link
