@@ -1,3 +1,5 @@
+"use client";
+
 import { Users, Music, Clapperboard, Mic, Newspaper, Palette } from 'lucide-react';
 import Image from 'next/image';
 import { SlideIn } from '../animations/slide-in';

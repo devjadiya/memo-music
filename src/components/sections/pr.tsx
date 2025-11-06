@@ -1,3 +1,5 @@
+"use client";
+
 import { Award, Megaphone, Star, Handshake, TrendingUp } from 'lucide-react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
