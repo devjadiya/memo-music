@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Loader2, Send } from 'lucide-react';
+import { Loader2, Send, MapPin } from 'lucide-react';
 import { useFormStatus } from 'react-dom';
 import { SocialIcon } from 'react-social-icons';
 
@@ -67,7 +67,25 @@ export default function ContactSection() {
             <SubmitButton />
           </form>
 
-            <div className="mt-8 text-center">
+            <div className="mt-16 text-center">
+              <h3 className="font-headline text-2xl font-bold text-foreground">Our Location</h3>
+              <p className="mt-2 text-muted-foreground">Downtown Dubai, UAE</p>
+              <div className="mt-4">
+                <Button 
+                  asChild 
+                  variant="outline" 
+                  className="bg-secondary hover:bg-secondary/80 hover:text-foreground"
+                >
+                  <a href="https://www.google.com/maps/search/?api=1&query=Downtown+Dubai" target="_blank" rel="noopener noreferrer">
+                    <MapPin className="mr-2 h-4 w-4" />
+                    View on Google Maps
+                  </a>
+                </Button>
+              </div>
+            </div>
+
+
+            <div className="mt-12 text-center">
                  <p className="text-sm text-muted-foreground">
                     Your Talent, Our Expertise, Global Success
                 </p>
