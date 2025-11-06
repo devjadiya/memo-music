@@ -41,7 +41,7 @@ export default function PRSection() {
             </SlideIn>
             <SlideIn direction="down" delay={0.1}>
               <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
-                Making the Artist Famous on a Global Scale
+                Making People Famous on a Global Scale
               </h2>
             </SlideIn>
             <FadeIn delay={0.3}>
