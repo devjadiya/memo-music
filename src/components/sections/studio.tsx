@@ -1,19 +1,19 @@
 "use client";
 
 import Image from 'next/image';
-import { CheckCircle2 } from 'lucide-react';
+import { FaHeadphones, FaMicrophone, FaRegCheckCircle, FaPencilAlt, FaMusic, FaBuilding, FaSlidersH } from 'react-icons/fa';
 import { StaggerList, listItemVariants } from '../animations/stagger-list';
 import { SlideIn } from '../animations/slide-in';
 import { FadeIn } from '../animations/fade-in';
 import { motion } from 'framer-motion';
 
 const studioServices = [
-  'Professional Recording',
-  'Mixing & Mastering',
-  'Songwriting',
-  'Vocal Direction',
-  'Complete Song Creation',
-  'Studio Rental',
+  { name: 'Professional Recording', icon: <FaMicrophone className="h-5 w-5 text-primary" /> },
+  { name: 'Mixing & Mastering', icon: <FaSlidersH className="h-5 w-5 text-primary" /> },
+  { name: 'Songwriting', icon: <FaMusic className="h-5 w-5 text-primary" /> },
+  { name: 'Vocal Direction', icon: <FaHeadphones className="h-5 w-5 text-primary" /> },
+  { name: 'Complete Song Creation', icon: <FaPencilAlt className="h-5 w-5 text-primary" /> },
+  { name: 'Studio Rental', icon: <FaBuilding className="h-5 w-5 text-primary" /> },
 ];
 
 export default function StudioSection() {
@@ -37,11 +37,11 @@ export default function StudioSection() {
                 Our state-of-the-art 400 square meter studio in Downtown Dubai is engineered for world-class sound performance and exceptional comfort. Every detail is optimized to inspire creativity and deliver elite production quality. MEMO MUSIC also offers studio rental for independent artists, including professional recording, mixing, mastering, songwriting, vocal direction, and complete song creation packages. Any artist can produce commercially ready music with access to our experienced production team.
               </p>
             </FadeIn>
-             <StaggerList delay={0.5} staggerDuration={0.07} className="grid grid-cols-2 gap-4 text-base text-muted-foreground">
-              {studioServices.map((service) => (
-                <motion.li key={service} variants={listItemVariants} className="flex items-center gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-primary" />
-                  <span>{service}</span>
+            <StaggerList delay={0.5} staggerDuration={0.07} className="grid grid-cols-2 gap-4 text-base text-muted-foreground">
+              {studioServices.map(({ name, icon }) => (
+                <motion.li key={name} variants={listItemVariants} className="flex items-center gap-3">
+                  {icon}
+                  <span>{name}</span>
                 </motion.li>
               ))}
             </StaggerList>
@@ -49,14 +49,14 @@ export default function StudioSection() {
           <SlideIn direction="right">
             <div className="flex items-center justify-center">
               <Image
-                  src="/images/5.jpg"
-                  alt="Collage of the MEMO MUSIC studio"
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-2xl"
-                  data-ai-hint="music studio collage"
-                  loading="lazy"
-                />
+                src="/images/5.jpg"
+                alt="Collage of the MEMO MUSIC studio"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-2xl"
+                data-ai-hint="music studio collage"
+                loading="lazy"
+              />
             </div>
           </SlideIn>
         </div>

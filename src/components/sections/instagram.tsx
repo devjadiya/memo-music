@@ -10,11 +10,14 @@ export default function InstagramSection() {
     <section id="instagram" className="py-24 sm:py-32 bg-secondary/10">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center space-y-4">
-          <SlideIn direction="down">
-            <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
-              Follow Our Journey
-            </h2>
-          </SlideIn>
+          {/* REMOVED: <SlideIn direction="down">
+            This wrapper was likely causing the element to be stuck at opacity: 0
+          */}
+          <h2 className="font-headline text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
+            Follow Our Journey
+          </h2>
+          {/* END REMOVAL */}
+          
           <FadeIn delay={0.2}>
             <p className="text-base text-muted-foreground md:text-lg">
               Stay up to date with our latest projects, artist spotlights, and behind-the-scenes content on Instagram.

@@ -12,16 +12,18 @@ export default function AboutSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-24 items-center">
           <div className="space-y-4">
-            <SlideIn direction="down">
+            {/* Removed the SlideIn wrapper from here */}
+            <div>
               <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-semibold tracking-wider uppercase text-primary">
                 About MEMO MUSIC
               </div>
-            </SlideIn>
-            <SlideIn direction="down" delay={0.1}>
-              <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
+            </div>
+            {/* Removed the SlideIn wrapper from here */}
+            <div>
+              <h2 className="font-headline text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
                 Turning Talent Into Global Stars
               </h2>
-            </SlideIn>
+            </div>
             <FadeIn delay={0.3}>
               <p className="text-base text-muted-foreground md:text-lg">
                 MEMO MUSIC stands as a premier music production company founded by Ryan Makhoul, the visionary manager behind some of the most influential Arabic artists in the world. Born and raised in Los Angeles, Ryan has been instrumental in shaping international careers and expanding the reach of Arabic music.
@@ -33,7 +35,8 @@ export default function AboutSection() {
               </p>
             </FadeIn>
           </div>
-          <SlideIn direction="left">
+          {/* Removed the SlideIn wrapper from this column */}
+          <div>
             <div className="flex flex-col items-center justify-center gap-8">
               <Image
                 src="/images/1.jpg"
@@ -47,13 +50,13 @@ export default function AboutSection() {
               <Card className="w-full max-w-md border-primary/50 border-l-4 bg-secondary shadow-lg">
                 <CardContent className="p-8">
                   <Quote className="h-8 w-8 text-primary" />
-                  <blockquote className="mt-4 text-xl font-medium text-foreground md:text-2xl">
+                  <blockquote className="mt-4 text-xl font-medium text-white md:text-2xl">
                     We handle the business, you enjoy the spotlight.
                   </blockquote>
                 </CardContent>
               </Card>
             </div>
-          </SlideIn>
+          </div>
         </div>
       </div>
     </section>
