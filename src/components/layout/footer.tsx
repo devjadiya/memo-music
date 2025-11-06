@@ -23,7 +23,7 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <Image
-                src="https://blush-fashionable-swift-557.mypinata.cloud/ipfs/bafybeiaqwd37ydrlveo7mpxnx7enf6uwi7u4p2usuuis3adefi3v2ggc7a"
+                src="/images/logo.png"
                 alt="MEMO MUSIC Logo"
                 width={120}
                 height={120}
@@ -66,14 +66,14 @@ export default function Footer() {
           
           <div className="lg:col-span-3">
             <h3 className="font-semibold text-foreground tracking-wider mb-4">Follow Us</h3>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-x-2">
                <SocialIcon
                   url="https://instagram.com"
                   network="instagram"
                   bgColor="transparent"
                   fgColor="currentColor"
                   className="text-muted-foreground transition-colors hover:text-primary"
-                  style={{ height: 40, width: 40 }}
+                  style={{ height: 48, width: 48 }}
                 />
                 <SocialIcon
                   url="https://youtube.com"
@@ -81,7 +81,7 @@ export default function Footer() {
                   bgColor="transparent"
                   fgColor="currentColor"
                   className="text-muted-foreground transition-colors hover:text-primary"
-                  style={{ height: 40, width: 40 }}
+                  style={{ height: 48, width: 48 }}
                 />
             </div>
           </div>
