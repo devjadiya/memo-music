@@ -49,20 +49,21 @@ export default function Header() {
            <Image
             src="/images/logo.png"
             alt="MEMO MUSIC Logo"
-            width={120}
-            height={120}
-            className="h-14 w-auto"
+            width={140}
+            height={140}
+            className="h-16 w-auto"
             priority
           />
         </Link>
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-neutral-300 transition-colors hover:text-white"
+              className="relative text-base font-medium text-neutral-300 transition-colors hover:text-white group"
             >
               {link.label}
+              <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
             </Link>
           ))}
         </nav>
