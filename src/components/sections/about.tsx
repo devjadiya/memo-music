@@ -1,7 +1,10 @@
+"use client";
+
 import { Quote } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { SlideIn } from '../animations/slide-in';
 import { FadeIn } from '../animations/fade-in';
+import Image from 'next/image';
 
 export default function AboutSection() {
   return (
@@ -31,7 +34,15 @@ export default function AboutSection() {
             </FadeIn>
           </div>
           <SlideIn direction="left">
-            <div className="flex items-center justify-center">
+            <div className="flex flex-col items-center justify-center gap-8">
+              <Image
+                src="/images/2.jpg"
+                alt="Ryan Makhoul, founder of MEMO MUSIC"
+                width={400}
+                height={400}
+                className="rounded-full shadow-2xl aspect-square object-cover"
+                data-ai-hint="man portrait studio"
+              />
               <Card className="w-full max-w-md border-primary/50 border-l-4 bg-secondary shadow-lg">
                 <CardContent className="p-8">
                   <Quote className="h-8 w-8 text-primary" />
