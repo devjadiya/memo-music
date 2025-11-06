@@ -8,16 +8,6 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'blush-fashionable-swift-557.mypinata.cloud',
-        port: '',
-        pathname: '/ipfs/**',
-      },
-    ],
-  },
 };
 
 export default nextConfig;
