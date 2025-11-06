@@ -42,6 +42,7 @@ export default function AboutSection() {
                 height={400}
                 className="rounded-full shadow-2xl aspect-square object-cover"
                 data-ai-hint="man portrait studio"
+                loading="lazy"
               />
               <Card className="w-full max-w-md border-primary/50 border-l-4 bg-secondary shadow-lg">
                 <CardContent className="p-8">

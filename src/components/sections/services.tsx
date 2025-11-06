@@ -63,6 +63,7 @@ export default function ServicesSection() {
                   height={400}
                   className="rounded-lg shadow-2xl"
                   data-ai-hint="modern office reception"
+                  loading="lazy"
                 />
               </div>
           </SlideIn>

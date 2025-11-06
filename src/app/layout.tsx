@@ -17,9 +17,10 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'MEMO MUSIC | Turning Talent Into Global Stars',
+  title: 'MEMO MUSIC | Premier Music Production & Artist Management',
   description:
-    'MEMO MUSIC is a premier music production company enabling talent to reach their highest potential and achieve international success.',
+    'MEMO MUSIC, a premier music production company by Ryan Makhoul. We turn talented artists into global stars with world-class production, PR, and management. Developed by Dev Jadiya.',
+  keywords: 'MEMO MUSIC, music production, artist management, record label, Ryan Makhoul, global stars, music services, Dev Jadiya, Dubai music studio',
 };
 
 export default function RootLayout({

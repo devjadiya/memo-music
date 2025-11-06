@@ -62,6 +62,7 @@ export default function TeamSection() {
                       height={750}
                       className="rounded-lg shadow-2xl"
                       data-ai-hint="man music studio"
+                      loading="lazy"
                   />
               </div>
             </SlideIn>

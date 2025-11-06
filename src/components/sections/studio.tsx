@@ -55,6 +55,7 @@ export default function StudioSection() {
                   height={400}
                   className="rounded-lg shadow-2xl"
                   data-ai-hint="music studio collage"
+                  loading="lazy"
                 />
             </div>
           </SlideIn>

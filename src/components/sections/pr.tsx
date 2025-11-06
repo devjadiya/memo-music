@@ -29,6 +29,7 @@ export default function PRSection() {
                   height={400}
                   className="rounded-lg shadow-2xl"
                   data-ai-hint="business handshake office"
+                  loading="lazy"
                 />
               </div>
             </SlideIn>
