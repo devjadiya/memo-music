@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <head>
-        <link rel="icon" href="/images/logo.png" sizes="any" />
+        <link rel="icon" href="https://blush-fashionable-swift-557.mypinata.cloud/ipfs/bafybeiaqwd37ydrlveo7mpxnx7enf6uwi7u4p2usuuis3adefi3v2ggc7a" sizes="any" />
       </head>
       <body 
         className={cn(
