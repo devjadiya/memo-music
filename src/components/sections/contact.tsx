@@ -4,8 +4,10 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Loader2, Send, MapPin } from 'lucide-react';
+import { Loader2, Send } from 'lucide-react';
 import { useFormStatus } from 'react-dom';
+import { SlideIn } from '../animations/slide-in';
+import { FadeIn } from '../animations/fade-in';
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -30,15 +32,19 @@ export default function ContactSection() {
     <section id="contact" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center space-y-4">
-          <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-            Let’s Make Your Music Dreams Reality
-          </h2>
-          <p className="text-lg text-muted-foreground">
-             Whether you are an aspiring talent or a creative collaborator, connect with MEMO MUSIC to explore how your vision can evolve into global success.
-          </p>
+          <SlideIn direction="down">
+            <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+              Let’s Make Your Music Dreams Reality
+            </h2>
+          </SlideIn>
+          <FadeIn delay={0.2}>
+            <p className="text-lg text-muted-foreground">
+              Whether you are an aspiring talent or a creative collaborator, connect with MEMO MUSIC to explore how your vision can evolve into global success.
+            </p>
+          </FadeIn>
         </div>
 
-        <div className="mt-16 max-w-2xl mx-auto">
+        <FadeIn delay={0.4} className="mt-16 max-w-2xl mx-auto">
           <form action="https://formsubmit.co/itsdevjadiya@gmail.com" method="POST" className="space-y-6">
             <input type="hidden" name="_subject" value="New submission from MEMO MUSIC Website!" />
             <input type="hidden" name="_next" value="https://memomusic-5555.web.app/" />
@@ -66,7 +72,7 @@ export default function ContactSection() {
             <SubmitButton />
           </form>
 
-            <div className="mt-16 text-center">
+            <FadeIn className="mt-16 text-center" delay={0.2}>
               <h3 className="font-headline text-2xl font-bold text-foreground">Our Location</h3>
               <p className="mt-2 text-muted-foreground">Downtown Dubai, UAE</p>
               <div className="mt-4 rounded-lg overflow-hidden border border-border/20">
@@ -80,8 +86,8 @@ export default function ContactSection() {
                   referrerPolicy="no-referrer-when-downgrade">
                 </iframe>
               </div>
-            </div>
-        </div>
+            </FadeIn>
+        </FadeIn>
       </div>
     </section>
   );
