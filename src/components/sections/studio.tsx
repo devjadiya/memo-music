@@ -2,12 +2,12 @@ import Image from 'next/image';
 import { CheckCircle2 } from 'lucide-react';
 
 const studioServices = [
-  'Professional Recording',
-  'Mixing & Mastering',
-  'Songwriting',
-  'Vocal Direction',
-  'Complete Song Creation',
-  'Studio Rental',
+  'Precision Audio Recording',
+  'Advanced Mixing & Mastering',
+  'Executive Songwriting & Composition',
+  'Elite Vocal Coaching & Direction',
+  'Full-Service Song Creation',
+  'Exclusive Studio Rental',
 ];
 
 export default function StudioSection() {
@@ -17,16 +17,13 @@ export default function StudioSection() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-24 items-center">
           <div className="space-y-6">
              <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-secondary-foreground">
-              Our Studio
+              Our Facility
             </div>
             <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-              Engineered for Excellence
+              Engineered for Sonic Perfection
             </h2>
             <p className="text-lg text-muted-foreground">
-              Our state-of-the-art 400 square meter studio in Downtown Dubai is
-              engineered for world-class sound performance and exceptional
-              comfort. Every detail is optimized to inspire creativity and
-              deliver elite production quality. MEMO MUSIC also offers studio rental for independent artists, including professional recording, mixing, mastering, songwriting, vocal direction, and complete song creation packages. Any artist can produce commercially ready music with access to our experienced production team.
+              Our state-of-the-art 400sqm studio in Downtown Dubai is a sanctuary of sound, meticulously engineered for world-class performance and creative comfort. We provide an environment where artistry thrives, supported by elite production technology. For independent artists, we offer exclusive rental access to our facilities and seasoned production team, ensuring every track meets commercial release standards.
             </p>
              <ul className="grid grid-cols-2 gap-4 text-base text-muted-foreground">
               {studioServices.map((service) => (

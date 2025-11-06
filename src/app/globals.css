@@ -16,7 +16,7 @@
     --secondary-foreground: 200 33% 85%;
     --muted: 222 100% 12%;
     --muted-foreground: 200 24% 65%;
-    --accent: 206 98% 57%;
+    --accent: 182 100% 74%;
     --accent-foreground: 222 100% 12%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -24,7 +24,7 @@
     --input: 222 100% 12%;
     --ring: 217 99% 50%;
     --chart-1: 217 99% 50%;
-    --chart-2: 206 98% 57%;
+    --chart-2: 182 100% 74%;
     --chart-3: 215 97% 49%;
     --chart-4: 222 100% 23%;
     --chart-5: 200 33% 85%;
@@ -38,5 +38,16 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  @keyframes hero-pan-zoom {
+    0% {
+      transform: scale(1) translate(0, 0);
+    }
+    100% {
+      transform: scale(1.1) translate(-1%, 1%);
+    }
   }
 }

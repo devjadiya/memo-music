@@ -9,23 +9,23 @@ export default function HeroSection() {
         src="/images/2.jpg"
         alt="MEMO MUSIC Studio Control Room"
         fill
-        className="object-cover"
+        className="object-cover animate-[hero-pan-zoom_20s_ease-in-out_infinite_alternate]"
         priority
         data-ai-hint="music studio control room"
       />
       <div className="absolute inset-0 bg-black/70" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
         <div className="container px-4 md:px-6">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-12 duration-1000">
             <h1 className="font-headline text-5xl font-bold tracking-tight text-accent md:text-7xl lg:text-8xl">
-              Turning Talent Into Global Stars
+              Engineering Stardom. Defining Legacies.
             </h1>
             <p className="mt-6 max-w-3xl mx-auto text-lg text-neutral-200 md:text-xl">
-              MEMO MUSIC stands as a premier music production company founded by Ryan Makhoul, the visionary manager behind some of the most influential Arabic artists in the world. His work includes collaborations with acclaimed talents such as Mohamed Ramadan and Balqees Fathi, as well as major names in hip-hop and R&B like Juicy J and Ty Dolla $ign. Today, MEMO MUSIC operates as a powerhouse in artist development and music production, enabling talent to reach their highest potential and achieve international success.
+              MEMO MUSIC is the premier music production powerhouse founded by Ryan Makhoul, a visionary manager celebrated for launching global Arabic music icons. His portfolio, featuring collaborations with legends like Mohamed Ramadan, Balqees Fathi, Juicy J, and Ty Dolla $ign, showcases a mastery of cross-market artist elevation. Today, we are an integrated force in artist development and production, dedicated to transforming raw talent into international success.
             </p>
             <div className="mt-10">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <Link href="#contact">Start Your Journey</Link>
+                <Link href="#contact">Begin Your Ascent</Link>
               </Button>
             </div>
           </div>
