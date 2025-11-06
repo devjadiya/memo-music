@@ -84,10 +84,6 @@ export default function Header() {
                                 className="h-14 w-auto"
                             />
                         </Link>
-                         <Button variant="ghost" size="icon" onClick={closeMobileMenu}>
-                            <X className="h-6 w-6" />
-                            <span className="sr-only">Close menu</span>
-                        </Button>
                     </div>
                     <nav className="flex flex-col gap-4 p-4">
                         {navLinks.map((link) => (
