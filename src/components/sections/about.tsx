@@ -8,19 +8,16 @@ export default function AboutSection() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-24 items-center">
           <div className="space-y-4">
             <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-semibold tracking-wider uppercase text-primary">
-              Our Ethos
+              About MEMO MUSIC
             </div>
             <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-              A Legacy of Musical Innovation
+              Turning Talent Into Global Stars
             </h2>
             <p className="text-lg text-muted-foreground">
-              Founded on a passion for transformative artistry, MEMO MUSIC has
-              forged a reputation as a trusted leader in artist development and
-              promotion. Our mission is to provide comprehensive, 360-degree
-              support, empowering artists to focus exclusively on their craft.
+              MEMO MUSIC stands as a premier music production company founded by Ryan Makhoul, the visionary manager behind some of the most influential Arabic artists in the world. Born and raised in Los Angeles, Ryan has been instrumental in shaping international careers and expanding the reach of Arabic music.
             </p>
             <p className="text-lg text-muted-foreground">
-              MEMO MUSIC stands as a premier music production company founded by Ryan Makhoul, the visionary manager behind some of the most influential Arabic artists in the world. Born and raised in Los Angeles, Ryan has been instrumental in shaping international careers and expanding the reach of Arabic music. His work includes collaborations with acclaimed talents such as Mohamed Ramadan and Balqees Fathi, as well as major names in hip-hop and R&B like Juicy J and Ty Dolla $ign. This portfolio highlights MEMO MUSIC’s versatility and ability to elevate artists across global markets.
+             His work includes collaborations with acclaimed talents such as Mohamed Ramadan and Balqees Fathi, as well as major names in hip-hop and R&B like Juicy J and Ty Dolla $ign. This portfolio highlights MEMO MUSIC’s versatility and ability to elevate artists across global markets. Today, MEMO MUSIC operates as a powerhouse in artist development and music production, enabling talent to reach their highest potential and achieve international success.
             </p>
           </div>
           <div className="flex items-center justify-center">
@@ -28,7 +25,7 @@ export default function AboutSection() {
               <CardContent className="p-8">
                 <Quote className="h-8 w-8 text-primary" />
                 <blockquote className="mt-4 text-2xl font-medium text-foreground">
-                  We orchestrate the industry, so you can command the stage.
+                  We handle the business, you enjoy the spotlight.
                 </blockquote>
               </CardContent>
             </Card>

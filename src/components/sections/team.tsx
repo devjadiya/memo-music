@@ -1,14 +1,13 @@
-import { Card, CardContent, CardTitle, CardDescription } from '@/components/ui/card';
 import { Users, Music, Clapperboard, Mic, Newspaper, Palette } from 'lucide-react';
 import Image from 'next/image';
 
 const teamCapabilities = [
-  { icon: Music, text: 'Full-spectrum song production, from beat creation to final arrangement.' },
-  { icon: Palette, text: 'Personal brand cultivation and artist presence development.' },
-  { icon: Mic, text: 'Visual identity curation, including styling and fashion direction.' },
-  { icon: Users, text: 'Digital strategy, social media management, and promotional campaigns.' },
-  { icon: Newspaper, text: 'Global press management and high-impact media placements.' },
-  { icon: Clapperboard, text: 'Worldwide music video production and creative direction.' },
+  { icon: Music, text: 'Song production including beat creation, writing, recording, and arrangement.' },
+  { icon: Palette, text: 'Artist presence development and personal branding.' },
+  { icon: Mic, text: 'Styling, fashion direction, and visual identity.' },
+  { icon: Users, text: 'Social media management and promotional campaigns.' },
+  { icon: Newspaper, text: 'Press and media management.' },
+  { icon: Clapperboard, text: 'Global music video production and creative direction.' },
 ];
 
 export default function TeamSection() {
@@ -17,13 +16,13 @@ export default function TeamSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center space-y-4">
            <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-secondary-foreground">
-              Our Experts
+              Our Team
             </div>
           <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
             The Powerhouse Behind the Stars
           </h2>
           <p className="text-lg text-muted-foreground">
-            Our dedicated team of 50 industry professionals operates in synergy to architect enduring careers. Each specialist at MEMO MUSIC is committed to sculpting an artist's public trajectory, allowing them to concentrate solely on performance and creativity.
+            A dedicated team of 50 industry professionals works collaboratively to prepare artists for long-term success. Every expert at MEMO MUSIC works for the artist’s success, shaping careers and public perception while the artist focuses solely on creativity and performance.
           </p>
         </div>
 

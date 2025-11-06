@@ -32,15 +32,15 @@ export default function ContactSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-            Define Your Legacy
+            Let’s Make Your Music Dreams Reality
           </h2>
           <p className="text-lg text-muted-foreground">
-            Connect with us to explore how your vision can be transformed into a global phenomenon. We welcome inquiries from aspiring talents and creative collaborators.
+             Whether you are an aspiring talent or a creative collaborator, connect with MEMO MUSIC to explore how your vision can evolve into global success.
           </p>
         </div>
 
         <div className="mt-16 max-w-2xl mx-auto">
-          <form action="https://formsubmit.co/itsdevjadiya@gmail.com" method="POST" className="space-y-6">
+          <form action="https://formsubmit.co/memomusicdubai@hotmail.com" method="POST" className="space-y-6">
             <input type="hidden" name="_subject" value="New submission from MEMO MUSIC Website!" />
             <input type="hidden" name="_next" value="https://memomusic-5555.web.app/" />
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -69,11 +69,11 @@ export default function ContactSection() {
 
             <div className="mt-8 text-center">
                  <p className="text-sm text-muted-foreground">
-                    All submissions are directed to our talent acquisition team for review.
+                    Your Talent, Our Expertise, Global Success
                 </p>
                 <div className="mt-4 flex justify-center gap-4">
                   <SocialIcon
-                    url="https://instagram.com"
+                    url="https://www.instagram.com/memomusiclabel?igsh=MW5jdmMxa2tja3pxbw=="
                     network="instagram"
                     bgColor="transparent"
                     fgColor="currentColor"

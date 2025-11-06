@@ -32,7 +32,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Engineering Stardom. Defining Legacies.
+              Turning Talent Into Global Stars.
             </p>
           </div>
           
@@ -57,9 +57,9 @@ export default function Footer() {
              <div className="space-y-3 text-sm text-muted-foreground">
                 <p>Downtown Dubai, UAE</p>
                 <p>
-                  <Link href="mailto:info@memomusic.com" className="hover:text-primary transition-colors">
-                    info@memomusic.com
-                  </Link>
+                  <a href="mailto:memomusicdubai@hotmail.com" className="hover:text-primary transition-colors">
+                    memomusicdubai@hotmail.com
+                  </a>
                 </p>
              </div>
           </div>
@@ -68,7 +68,7 @@ export default function Footer() {
             <h3 className="font-semibold text-foreground tracking-wider mb-4">Follow Us</h3>
             <div className="flex items-center gap-x-2">
                <SocialIcon
-                  url="https://instagram.com"
+                  url="https://www.instagram.com/memomusiclabel?igsh=MW5jdmMxa2tja3pxbw=="
                   network="instagram"
                   bgColor="transparent"
                   fgColor="currentColor"

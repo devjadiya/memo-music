@@ -1,4 +1,3 @@
-
 export default function HeroSection() {
   return (
     <section id="home" className="relative h-dvh w-full overflow-hidden bg-black">

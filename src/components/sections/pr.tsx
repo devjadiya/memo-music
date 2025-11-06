@@ -2,11 +2,11 @@ import { Award, Megaphone, Star, Handshake, TrendingUp } from 'lucide-react';
 import Image from 'next/image';
 
 const prServices = [
-  { icon: Megaphone, title: 'Strategic Publicity & Reputation Management', description: 'Crafting resonant narratives that build cultural impact.' },
-  { icon: Award, title: 'Elite Media & Editorial Placement', description: 'Securing features in high-profile international publications.' },
-  { icon: Star, title: 'Global Influencer & Celebrity Alliances', description: 'Forging networks that amplify influence and credibility.' },
-  { icon: Handshake, title: 'High-Value Brand Partnerships', description: 'Architecting lucrative sponsorship deals with global brands.' },
-  { icon: TrendingUp, title: 'Accelerated Audience Growth', description: 'Executing data-driven strategies for exponential fanbase expansion.' },
+  { icon: Megaphone, title: 'Magazine and media features', description: 'High-profile press coverage and interviews.' },
+  { icon: Award, title: 'Publicity campaigns and reputation building', description: 'Securing features in high-profile international publications.' },
+  { icon: Star, title: 'Influencer relations and celebrity networking', description: 'Forging networks that amplify influence and credibility.' },
+  { icon: Handshake, title: 'Brand partnerships and sponsorship opportunities', description: 'Architecting lucrative sponsorship deals with global brands.' },
+  { icon: TrendingUp, title: 'Audience engagement strategies', description: 'Executing data-driven strategies designed to grow fanbases rapidly.' },
 ];
 
 export default function PRSection() {
@@ -26,13 +26,13 @@ export default function PRSection() {
           </div>
           <div className="order-1 lg:order-2 space-y-6 lg:col-span-1">
             <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-semibold tracking-wider uppercase text-primary">
-              Public Relations & Fame Architecture
+              Public Relations and Fame Development
             </div>
             <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-              Architecting Global Influence
+              Making the Artist Famous on a Global Scale
             </h2>
             <p className="text-lg text-muted-foreground">
-              MEMO MUSIC excels in elevating artist profiles into influential public figures. Our PR division engineers strategic exposure to catalyze global recognition and construct enduring legacies.
+              MEMO MUSIC specializes in elevating visibility and building influential public images designed for strong audience impact. Our PR division drives strategic exposure.
             </p>
             <div className="space-y-4">
               {prServices.map((service, index) => (
