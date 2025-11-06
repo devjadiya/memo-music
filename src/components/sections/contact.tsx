@@ -6,7 +6,6 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Loader2, Send, MapPin } from 'lucide-react';
 import { useFormStatus } from 'react-dom';
-import { SocialIcon } from 'react-social-icons';
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -81,31 +80,6 @@ export default function ContactSection() {
                   referrerPolicy="no-referrer-when-downgrade">
                 </iframe>
               </div>
-            </div>
-
-
-            <div className="mt-12 text-center">
-                 <p className="text-sm text-muted-foreground">
-                    Your Talent, Our Expertise, Global Success
-                </p>
-                <div className="mt-4 flex justify-center gap-4">
-                  <SocialIcon
-                    url="https://www.instagram.com/memomusiclabel?igsh=MW5jdmMxa2tja3pxbw=="
-                    network="instagram"
-                    bgColor="transparent"
-                    fgColor="currentColor"
-                    className="text-muted-foreground transition-colors hover:text-primary"
-                    style={{ height: 40, width: 40 }}
-                  />
-                  <SocialIcon
-                    url="https://youtube.com"
-                    network="youtube"
-                    bgColor="transparent"
-                    fgColor="currentColor"
-                    className="text-muted-foreground transition-colors hover:text-primary"
-                    style={{ height: 40, width: 40 }}
-                  />
-                </div>
             </div>
         </div>
       </div>
