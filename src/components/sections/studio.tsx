@@ -12,11 +12,11 @@ const studioServices = [
 
 export default function StudioSection() {
   return (
-    <section id="studio" className="py-24 sm:py-32 bg-card">
+    <section id="studio" className="py-24 sm:py-32 bg-secondary/20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-24 items-center">
           <div className="space-y-6">
-             <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-secondary-foreground">
+             <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-semibold tracking-wider uppercase text-primary">
               Our Facility
             </div>
             <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
@@ -28,7 +28,7 @@ export default function StudioSection() {
              <ul className="grid grid-cols-2 gap-4 text-base text-muted-foreground">
               {studioServices.map((service) => (
                 <li key={service} className="flex items-center gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-accent" />
+                  <CheckCircle2 className="h-5 w-5 text-primary" />
                   <span>{service}</span>
                 </li>
               ))}

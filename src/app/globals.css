@@ -4,30 +4,40 @@
 
 @layer base {
   :root {
-    --background: 224 83% 5%; /* #02061a - almost black */
-    --foreground: 200 33% 85%; /* #c7e0e8 - light blue-grey text */
-    --card: 224 83% 5%;
-    --card-foreground: 200 33% 85%;
-    --popover: 224 83% 5%;
-    --popover-foreground: 200 33% 85%;
-    --primary: 217 99% 50%; /* #0437fe - bright electric blue */
-    --primary-foreground: 200 33% 95%; /* Lighter text on primary */
-    --secondary: 222 100% 12%; /* #001141 - very dark blue */
-    --secondary-foreground: 200 33% 85%;
-    --muted: 222 100% 12%;
-    --muted-foreground: 200 24% 65%;
-    --accent: 182 100% 74%; /* A lighter shade for highlights */
-    --accent-foreground: 222 100% 12%;
+    --background: 224 71% 4%; /* #020617 - A deep, near-black */
+    --foreground: 210 40% 98%; /* #f8f9fa - Off-white for crisp text */
+
+    --card: 224 71% 6%; /* A slightly lighter near-black for cards */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%; /* #4f86f7 - A vibrant, electric blue */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 222 84% 9%; /* #090f23 - Dark blue for subtle depth */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 222 84% 9%;
+    --muted-foreground: 215 28% 65%; /* A softer grey for less important text */
+    
+    --accent: 217 91% 60%; /* Using the primary blue as the main accent */
+    --accent-foreground: 210 40% 98%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 222 100% 12%;
-    --input: 222 100% 12%;
-    --ring: 217 99% 50%;
-    --chart-1: 217 99% 50%;
+
+    --border: 222 84% 9%;
+    --input: 222 84% 9%;
+    --ring: 217 91% 60%;
+    
+    --chart-1: 217 91% 60%;
     --chart-2: 182 100% 74%;
     --chart-3: 215 97% 49%;
     --chart-4: 222 100% 23%;
     --chart-5: 200 33% 85%;
+    
     --radius: 0.5rem;
   }
 }

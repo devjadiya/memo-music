@@ -11,7 +11,7 @@ const prServices = [
 
 export default function PRSection() {
   return (
-    <section id="pr" className="py-24 sm:py-32 bg-card">
+    <section id="pr" className="py-24 sm:py-32 bg-secondary/20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-24 items-center">
             <div className="order-2 lg:order-1 flex items-center justify-center">
@@ -25,7 +25,7 @@ export default function PRSection() {
               />
           </div>
           <div className="order-1 lg:order-2 space-y-6 lg:col-span-1">
-            <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-secondary-foreground">
+            <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-semibold tracking-wider uppercase text-primary">
               Public Relations & Fame Architecture
             </div>
             <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
@@ -37,8 +37,8 @@ export default function PRSection() {
             <div className="space-y-4">
               {prServices.map((service, index) => (
                 <div key={index} className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                    <service.icon className="h-6 w-6 text-accent" />
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/50">
+                    <service.icon className="h-6 w-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground">{service.title}</h3>

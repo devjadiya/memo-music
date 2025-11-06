@@ -17,7 +17,7 @@ export default function HeroSection() {
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-12 duration-1000">
-            <h1 className="font-headline text-5xl font-bold tracking-tight text-accent md:text-7xl lg:text-8xl">
+            <h1 className="font-headline text-5xl font-bold tracking-tight text-white md:text-7xl lg:text-8xl">
               Engineering Stardom. Defining Legacies.
             </h1>
             <p className="mt-6 max-w-3xl mx-auto text-lg text-neutral-200 md:text-xl">
