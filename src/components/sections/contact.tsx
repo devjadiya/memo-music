@@ -33,12 +33,12 @@ export default function ContactSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <SlideIn direction="down">
-            <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+            <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
               Let’s Make Your Music Dreams Reality
             </h2>
           </SlideIn>
           <FadeIn delay={0.2}>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-base text-muted-foreground md:text-lg">
               Whether you are an aspiring talent or a creative collaborator, connect with MEMO MUSIC to explore how your vision can evolve into global success.
             </p>
           </FadeIn>

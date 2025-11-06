@@ -26,12 +26,12 @@ export default function ServicesSection() {
             </div>
           </SlideIn>
           <SlideIn direction="down" delay={0.1}>
-            <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+            <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
               Premium Resources for Independent Artists
             </h2>
           </SlideIn>
           <FadeIn delay={0.3}>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-base text-muted-foreground md:text-lg">
               For artists seeking professional support without long-term management commitments, MEMO MUSIC provides access to the same premium resources used by international stars.
             </p>
           </FadeIn>
@@ -46,7 +46,7 @@ export default function ServicesSection() {
                     <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/20 mt-1">
                       <Check className="h-4 w-4 text-accent" />
                     </div>
-                    <span className="flex-1 text-lg text-muted-foreground">
+                    <span className="flex-1 text-base text-muted-foreground md:text-lg">
                       {service}
                     </span>
                   </motion.li>

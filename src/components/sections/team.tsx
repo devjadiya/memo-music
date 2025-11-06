@@ -27,12 +27,12 @@ export default function TeamSection() {
               </div>
           </SlideIn>
           <SlideIn direction="down" delay={0.1}>
-            <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+            <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
               The Powerhouse Behind the Stars
             </h2>
           </SlideIn>
           <FadeIn delay={0.3}>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-base text-muted-foreground md:text-lg">
               A dedicated team of 50 industry professionals works collaboratively to prepare artists for long-term success. Every expert at MEMO MUSIC works for the artist’s success, shaping careers and public perception while the artist focuses solely on creativity and performance.
             </p>
           </FadeIn>
@@ -47,7 +47,7 @@ export default function TeamSection() {
                           <capability.icon className="h-6 w-6 text-accent" />
                       </div>
                       <div>
-                          <p className="text-lg font-medium text-foreground">{capability.text}</p>
+                          <p className="text-base font-medium text-foreground md:text-lg">{capability.text}</p>
                       </div>
                       </motion.li>
                   ))}

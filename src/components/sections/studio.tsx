@@ -28,12 +28,12 @@ export default function StudioSection() {
               </div>
             </SlideIn>
             <SlideIn direction="down" delay={0.1}>
-              <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+              <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
                 Engineered for World-Class Sound
               </h2>
             </SlideIn>
             <FadeIn delay={0.3}>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-base text-muted-foreground md:text-lg">
                 Our state-of-the-art 400 square meter studio in Downtown Dubai is engineered for world-class sound performance and exceptional comfort. Every detail is optimized to inspire creativity and deliver elite production quality. MEMO MUSIC also offers studio rental for independent artists, including professional recording, mixing, mastering, songwriting, vocal direction, and complete song creation packages. Any artist can produce commercially ready music with access to our experienced production team.
               </p>
             </FadeIn>

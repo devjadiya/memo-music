@@ -39,12 +39,12 @@ export default function PRSection() {
               </div>
             </SlideIn>
             <SlideIn direction="down" delay={0.1}>
-              <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+              <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
                 Making the Artist Famous on a Global Scale
               </h2>
             </SlideIn>
             <FadeIn delay={0.3}>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-base text-muted-foreground md:text-lg">
                 MEMO MUSIC specializes in elevating visibility and building influential public images designed for strong audience impact. Our PR division drives strategic exposure.
               </p>
             </FadeIn>
