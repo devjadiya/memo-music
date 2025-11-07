@@ -21,16 +21,12 @@ export default function TeamSection() {
     <section id="team" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center space-y-4">
-          <SlideIn direction="down">
             <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-secondary-foreground">
                 Our Team
               </div>
-          </SlideIn>
-          <SlideIn direction="down" delay={0.1}>
             <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
               The Powerhouse Behind the Stars
             </h2>
-          </SlideIn>
           <FadeIn delay={0.3}>
             <p className="text-base text-muted-foreground md:text-lg">
               A dedicated team of 50 industry professionals works collaboratively to prepare artists for long-term success. Every expert at MEMO MUSIC works for the artist’s success, shaping careers and public perception while the artist focuses solely on creativity and performance.

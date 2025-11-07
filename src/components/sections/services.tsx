@@ -20,11 +20,9 @@ export default function ServicesSection() {
     <section id="services" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center space-y-4">
-          <SlideIn direction="down">
             <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-secondary-foreground">
               Independent Artist Services
             </div>
-          </SlideIn>
           <SlideIn direction="down" delay={0.1}>
             <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
               Premium Resources for Independent Artists

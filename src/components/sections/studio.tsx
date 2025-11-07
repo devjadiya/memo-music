@@ -22,11 +22,9 @@ export default function StudioSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-24 items-center">
           <div className="space-y-6">
-            <SlideIn direction="down">
               <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-semibold tracking-wider uppercase text-primary">
                 Our Studio
               </div>
-            </SlideIn>
             <SlideIn direction="down" delay={0.1}>
               <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
                 Engineered for World-Class Sound
